@@ -2,8 +2,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets\styles.css" />
     <title>Blog Spot</title>
+    <link rel="stylesheet" href="assets\css\reset.css" />
+    <link rel="stylesheet" href="assets\styles.css" />
+    <link rel="stylesheet" href="assets\css\form.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Honk&family=Imbue:opsz,wght@10..100,100..900&family=Madimi+One&family=Nabla&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Slackside+One&display=swap');
+    </style>
   </head>
-  <body></body>
+  <body class="imbue">
+    <img class="licking-paw" src="assets\pictures\licking-paw.jpg" alt="cat licking paw" width="300" height="250" />
+    <h1>Jot a Thought</h1>
+    <img class="tree-house" src="assets\pictures\cat-treehouse.jpg" alt="" />
+    <section class="container">
+      <form class="form">
+        <label for="uname">Username</label>
+        <input type="text" id="uname" placeholder="Username" />
+        <br />
+        <div>
+          <label for="title">Blog Title</label>
+          <input type="text" id="title" placeholder="Blog Title" />
+        </div>
+        <br />
+        <div>
+          <label for="type">Blog</label>
+          <br />
+          <textarea name="Start typing" id="typing" placeholder="Type your content"></textarea>
+        </div>
+        <br />
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+  </body>
 </html>
