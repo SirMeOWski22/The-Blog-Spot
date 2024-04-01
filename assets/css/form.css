@@ -22,6 +22,7 @@ h1 {
   justify-content: center;
   margin: 0;
   font-size: 75;
+  color: #d74b76;
 }
 
 .container {
@@ -30,17 +31,18 @@ h1 {
   width: 80%;
   max-width: 800px;
   box-sizing: border-box;
+  font-size: 25px;
+  color: aliceblue;
 }
 
-label[for='type'] {
-  text-align: left;
-  display: block;
-  margin-bottom: 0;
+#text {
+  border-radius: 5px;
 }
 
 form {
-  background-color: grey;
+  background-color: #8ec5b7;
   padding: 150px, 150px, 150px, 150px;
+  border-radius: 5px;
 }
 
 .licking-paw {
@@ -53,4 +55,18 @@ textarea {
   height: 150px;
   resize: vertical;
   margin-top: -20;
+  border-radius: 10px;
+}
+
+#submit {
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  color: aliceblue;
+  background-color: #d74b76;
+  transition: background-color 0.25;
+}
+
+#submit:hover {
+  background-color: rgb(12, 162, 231);
 }
