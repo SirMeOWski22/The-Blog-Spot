@@ -3,34 +3,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Spot</title>
-    <link rel="stylesheet" href="assets\css\reset.css" />
-    <link rel="stylesheet" href="assets\styles.css" />
     <link rel="stylesheet" href="assets\css\form.css" />
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Honk&family=Imbue:opsz,wght@10..100,100..900&family=Madimi+One&family=Nabla&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Slackside+One&display=swap');
-    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="imbue">
-    <img class="licking-paw" src="assets\pictures\licking-paw.jpg" alt="cat licking paw" width="300" height="250" />
-    <h1>Jot a Thought</h1>
-    <img class="tree-house" src="assets\pictures\cat-treehouse.jpg" alt="three cats sleeping on a cat tower" />
+  <body id="background-Color">
     <section class="container">
-      <form class="form">
-        <label>Username</label>
-        <input id="text" placeholder="Username" />
-        <br />
-        <div>
-          <label id="blogTitle">Blog Title</label>
-          <input type="text" id="text" placeholder="Blog Title" />
-        </div>
+      <form id="container form">
+        <h1>Log a Thought</h1>
+        <img id="cat-Tower" src="assets\pictures\cat-treehouse.jpg" alt="three cats sleeping on a cat tower" />
         <br /><br />
         <div>
-          <textarea name="Start typing" id="typing" placeholder="Type your content"></textarea>
+          <label for="">Username</label>
+          <input type="text" id="userName" placeholder="Username" />
         </div>
         <br />
-        <div id="btnContainer">
-          <button id="submit">Submit</button>
+        <div>
+          <label for="">Blog Title</label>
+          <input type="text" id="blogTitle" placeholder="Title" />
         </div>
+        <br />
+        <div>
+          <textarea name="blogContent" id="blogContent" cols="30" rows="10" placeholder="Type content here"></textarea>
+        </div>
+        <br /><br />
+        <input type="submit" class="btn" value="Blog It" />
       </form>
     </section>
   </body>
